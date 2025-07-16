@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Página - Módulo I - Primeiros Passos com HTML</title>
+</head>
+
+<body>
+   <h1 id="inicio">
+      <font size="7">Módulo 1 - Primeiros Passos com HTML</font>
+   </h1>
+   <hr />
+
+   <h2>
+      <font face="Arial">Índice</font>
+   </h2>
+   <ul>
+      <font face="Georgia">
+         <li><a href="#historia">História dos computadores</a></li>
+         <li><a href="#clients">O que são <i>Clients</i>?</a></li>
+         <li><a href="#servers">O que são <i>Servers</i>?</a></li>
+         <li><a href="#size"><i>Client-Size</i> x <i>Server-Size</i></a></li>
+         <li><a href="#estrutura">Como é uma estrutura básica de um HTML?</a></li>
+         <li><a href="#atributo">O que é um atributo?</a></li>
+         <li><a href="#tags">Tags de texto/formatação</a></li>
+         <li><a href="#listas">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
+         <li><a href="#target">Atributo Target</a></li>
+         <li><a href="#formulario">Formulários</a></li>
+         <li><a href="#select">Tag Select</a></li>
+         <li><a href="#formatacao">Tags de formatação</a></li>
+         <li><a href="#referencias">Links de referências</a></li>
+      </font>
+   </ul>
+
+   <h2 id="historia">
+      <font face="Arial">História dos computadores</font>
+   </h2>
+   <font face="Georgia, Times New Roman">
+      <h3>Primeiros Computadores</h3>
+      <p><strong>1º Geração - Por volta de 1944:</strong> Computadores com válvulas e processos mecânicos. Eram gigantes
+         e pesados.</p>
+      <blockquote>Exemplos: Colossus(1946), ENIAC(1946)</blockquote>
+
+      <p><strong>2º Geração - Por volta de 1959 a 1965:</strong> A utilização de transistores. Menores que o da primeira
+         geração.</p>
+
+      <p><strong>3º Geração - Por volta de 1965 a 1970:</strong> Dispositivos com circuito integrado(transsistor,
+         capacitores e resistores/chips). Menores e mais eficazes que a geração passada.</p>
+
+      <p><strong>4º Geração - Por volta de 1971 até os dias atuais:</strong> Microprocessadores, <i>Personal
+            Computer</i>, mais acessível e a criação do mouse.</p>
+
+      <p><strong><u>Apple, IBM e Microsoft</u></strong> foram fundamentais na popularização dos computadores pessoais,
+         impulsionando também o surgimento da internet e o acesso à informática nas casas. Hoje, os computadores fazem
+         parte do dia a dia em atividades como estudos, trabalho, comunicação e entretenimento.</p>
+
+      <p><strong>5º Geração - <mark>Em discussão se estamos ou ainda irá ocorrer:</mark></strong> Computação quântica,
+         <abbr title="Inteligência Artificial">IA</abbr>, Criptmoedas e Metaverso
+      </p>
+
+      <h3>Internet Como Surgiu</h3>
+
+      <p>Criada nos Estados Unidos durante a Guerra Fria, a internet surgiu em um contexto militar, quando os
+         computadores eram usados para cálculos de rota de mísseis e outras aplicações estratégicas. Nessa época, Joseph
+         C. R. Licklider teorizou sobre a criação de uma rede global, onde todos pudessem se comunicar através dos
+         computadores.</p>
+      <p>Em 1969, nasceu a <abbr title="Advanced Research Projects Agency Network"><u>ARPANET</u></abbr>, a primeira
+         rede de computadores, que conectava universidades e centros militares nos Estados Unidos. A primeira conexão
+         aconteceu em 29 de outubro de 1969, quando foi enviada uma mensagem simples entre dois computadores: “LO” — a
+         tentativa era digitar “LOGIN”, mas o sistema caiu antes de completar a palavra. Durante os anos 1970, a <abbr
+            title="Advanced Research Projects Agency Network"><u>ARPANET</u></abbr> se expandiu e, em 1973, já conectava
+         computadores dos Estados Unidos à Europa.</p>
+      <p>Em 1983, foi criado o protocolo <u>TCP/IP</u> por Vinton Cerf e Rober Kahn, que permitiu a comunicação entre
+         diferentes redes — ele é a base da internet como conhecemos hoje.</p>
+      <p>Na década de 1990, a internet deixou de ser exclusiva para fins militares e acadêmicos. Surgiram empresas que
+         começaram a oferecer acesso comercial ao público em geral.</p>
+      <p>Em 1991, foi criada, por Tim Berners-Lee, a <i>World Wide Web</i> (WWW), tornando possível a criação de sites e
+         páginas — o que facilitou ainda mais o acesso das pessoas à internet. Nos anos 1990 e 2000, a internet se
+         espalhou rapidamente pelo mundo, chegando às casas, empresas e escolas, tornando-se essencial para comunicação,
+         estudos, negócios e entretenimento. Atualmente, temos uma internet rápida, acessível em celulares, computadores
+         e diversos dispositivos. Ela é usada para redes sociais, streaming, compras online, trabalho remoto e conecta
+         bilhões de pessoas em todo o planeta.</p>
+      <h4>Grandes Nomes Envolvidos</h4>
+      <p>Grace Murray Hopper foi uma das pioneiras da computação e oficial da Marinha dos Estados Unidos. Em 1944,
+         participou como uma das primeiras programadoras do Harvard Mark I, um dos primeiros computadores
+         eletromecânicos. Sua carreira se destacou pelo trabalho na criação do <u>Flow-Matic</u>, uma das 1<sup>a</sup>
+         linguagens de programação de alto nível, desenvolvida na década de 1950, que permitia usar comandos mais
+         próximos da linguagem humana. O <u>Flow-Matic</u> serviu de base para o desenvolvimento do <abbr
+            title=" Common Business Oriented Language">COBOL</abbr>, uma das linguagens mais usadas em sistemas
+         comerciais e empresariais. Grace Hopper é lembrada não só por suas contribuições técnicas, mas também por sua
+         visão inovadora sobre o futuro da programação.</p>
+      <p>Marc Andreessen é um programador, empreendedor e investidor americano conhecido por seu papel fundamental na
+         popularização da internet. Em 1993, enquanto era estudante da Universidade de Illinois, liderou a criação do
+         <u>Mosaic</u>, o primeiro navegador gráfico da web, que tornou o acesso à internet mais simples e acessível ao
+         público em geral. O sucesso do Mosaic abriu caminho para o desenvolvimento do Netscape Navigator, lançado em
+         1994, que rapidamente se tornou o navegador mais usado do mundo na época. Além disso, Andreessen cofundou a
+         empresa Netscape Communications e, anos depois, tornou-se um importante investidor em tecnologia, sendo um dos
+         fundadores da Andreessen Horowitz, uma das principais empresas de capital de risco do Vale do Silício. Seu
+         trabalho foi decisivo para transformar a internet em uma ferramenta de uso global.
+      </p>
+      <p>Bill Gates é um empresário, programador e filantropo americano, conhecido por ter cofundado a Microsoft em 1975
+         ao lado de Paul Allen. Desde jovem, demonstrou grande interesse por programação e tecnologia. Com a Microsoft,
+         Gates liderou o desenvolvimento do sistema operacional <abbr
+            title="Microsoft Disk Operating System"><u>MS-DOS</u></abbr> e, mais tarde, do <u>Windows</u>, que se tornou
+         o sistema mais usado no mundo e revolucionou o uso dos computadores pessoais. Sua visão de levar um computador
+         para cada casa e empresa ajudou a popularizar a informática e mudou a indústria da tecnologia. Ao longo dos
+         anos, Gates se tornou um dos homens mais ricos do mundo e, a partir de 2008, passou a se dedicar principalmente
+         a projetos sociais e filantrópicos por meio da Fundação Bill & Melinda Gates, focada em saúde, educação e
+         combate à pobreza.</p>
+      <p>Steve Jobs foi um empresário, inventor e magnata americano, amplamente reconhecido como o cofundador da Apple
+         Inc. ao lado de Steve Wozniak e Ronald Wayne em 1976. Desde cedo, Jobs demonstrou uma paixão incomum por
+         tecnologia e design, buscando incessantemente a inovação e a simplicidade. Com a Apple, Jobs liderou a criação
+         de produtos revolucionários que transformaram a indústria da computação pessoal e, posteriormente, a de
+         dispositivos móveis. Entre suas criações mais icônicas estão o computador Macintosh, o tocador de música iPod,
+         o smartphone iPhone e o tablet iPad. Sua visão de integrar <i>hardware</i> e <i>software</i> de forma
+         intuitiva, aliada a um design elegante, mudou a forma como as pessoas interagem com a tecnologia. Jobs não era
+         apenas um engenheiro ou inventor; ele era um visionário com um talento incomparável para o marketing e a
+         apresentação. Suas famosas palestras de lançamento de produtos eram eventos aguardados, nos quais ele
+         hipnotizava a plateia com sua paixão e convicção. Apesar de ter sido afastado da Apple em 1985, ele retornou em
+         1997 e orquestrou um renascimento espetacular da empresa, levando-a a se tornar uma das companhias mais
+         valiosas do mundo.</p>
+      <small><a href="#inicio">Voltar</a></small>
+
+      <h2 id="clients">
+         <font face="Arial">O que são <i>Clients</i>?</font>
+      </h2>
+      <p><i>Client</i> (Cliente) é um termo que a gente usa bastante quando falamos de como a internet funciona,
+         especialmente de sites e aplicativos.</p>
+      <p>Cliente é quem faz uma solicitação. No mundo da internet, o cliente é geralmente o seu navegador (exemplo
+         Chrome, Firefox, Safari) ou um aplicativo no seu celular ou computador.</p>
+      <p><strong>Exemplo prático:</strong> Quando você digita "https://www.google.com/search?q=google.com" na barra de
+         endereço, seu navegador é o cliente que está pedindo para ver a página do Google. Ou quando você abre o
+         aplicativo do WhatsApp, ele é o cliente pedindo suas mensagens.</p>
+      <small><a href="#inicio">Voltar</a></small>
+
+      <h2 id="servers">
+         <font face="Arial">O que são <i>Servers</i>?</font>
+      </h2>
+      <p>Server (Servidor) é basicamente um computador superpotente e especializado que fica ligado 24 horas por dia, 7
+         dias por semana, em um lugar seguro (exemplo um data center). A função dele é guardar informações (dados,
+         arquivos, sites) e processar pedidos de vários "clientes" ao mesmo tempo.</p>
+      <p>Ele é como uma biblioteca gigante e um atendente super eficiente: Quando alguém pede um livro (uma página de um
+         site, por exemplo), o servidor é quem vai lá, encontra o livro, e te entrega. Ele é feito para ser rápido,
+         confiável e aguentar muita gente pedindo coisas ao mesmo tempo.</p>
+      <p>Existem vários tipos de servidores:</p>
+      <ul>
+         <li>
+            <p><strong>Servidor Web:</strong> Guarda os arquivos de um site (HTML, CSS, imagens) e os envia para o seu
+               navegador.</p>
+         </li>
+         <li>
+            <p><strong>Servidor de Banco de Dados:</strong> Guarda e gerencia todas as informações dinâmicas (cadastros
+               de usuários, produtos de uma loja online, etc.).</p>
+         </li>
+         <li>
+            <p><strong>Servidor de E-mail:</strong> Cuida do envio e recebimento dos seus e-mails.</p>
+         </li>
+         <li>
+            <p><strong>Servidor de Aplicação:</strong> Roda a lógica por trás de um sistema, processando as regras de
+               negócio.</p>
+         </li>
+      </ul>
+      <small><a href="#inicio">Voltar</a></small>
+
+      <h2 id="size">
+         <font face="Arial"><i>Client-Size</i> X <i>Server-Size</i></font>
+      </h2>
+      <p><i>Client-Side</i> (ou "lado do cliente") se refere a tudo que acontece e é executado diretamente no seu
+         dispositivo (seu computador, celular, tablet) depois que você fez aquela solicitação. É o que o seu navegador
+         ou aplicativo faz sem precisar ir lá no servidor de novo.</p>
+      <p>As tecnologia mais famosas que rodam no lado do cliente são feitas com HTML (para a estrutura da página), CSS
+         (para o estilo e design) e principalmente JavaScript (para a interatividade e dinamismo).</p>
+      <p>Exemplo prático:</p>
+      <ul>
+         <li>
+            <p>Quando você preenche um formulário e ele te avisa que um campo está vazio antes mesmo de você clicar em
+               "enviar", isso é JavaScript rodando no <i>Client-Side</i>.</p>
+         </li>
+         <li>
+            <p>Um menu que abre e fecha sem recarregar a página? <i>Client-Side</i>.</p>
+         </li>
+         <li>
+            <p>Uma galeria de fotos que você pode passar as imagens sem ir pra outra página? <i>Client-Side</i>.
+         </li>
+      </ul>
+      </p>
+      <p>Resumindo a diferença:</p>
+      <ul>
+         <li>
+            <p><strong>Cliente:</strong> É o programa ou dispositivo que pede algo (seu navegador, seu app).</p>
+         </li>
+         <li>
+            <p><strong><i>Client-Side</i>:</strong> É o processamento e a execução de código que acontece nesse programa
+               ou dispositivo do cliente, sem precisar do servidor para cada pequena interação.</p>
+         </li>
+      </ul>
+      <p><i>Server-Side</i> (ou "lado do servidor") se refere a tudo que acontece e é executado diretamente no servidor.
+         É o código que o servidor entende e processa antes de mandar qualquer coisa para o seu dispositivo.</p>
+      <p>Linguagens comuns: As linguagens mais famosas para programar no lado do servidor são PHP, Python (com
+         frameworks como Django ou Flask), Java (com Spring), Node.js (JavaScript no servidor), Ruby (com Ruby on
+         Rails), entre outras.</p>
+      <p>O Server-Side é responsável por:</p>
+      <ul>
+         <li>
+            <p>Processar dados: Quando você preenche um formulário e clica em "enviar", o servidor recebe esses dados.
+            </p>
+         </li>
+         <li>
+            <p>Interagir com banco de dados: Ele salva seu cadastro, busca informações de produtos, etc.</p>
+         </li>
+         <li>
+            <p>Gerar páginas dinâmicas: Ele monta a página com as informações certas para você (tipo a página do seu
+               perfil em uma rede social, que é diferente para cada usuário).</p>
+         </li>
+         <li>
+            <p>Segurança: Autenticação de login, verificação de permissões e outras lógicas sensíveis ficam no servidor,
+               longe dos olhos dos usuários.</p>
+         </li>
+         <li>
+            <p>Lógica de Negócios: As regras complexas de um sistema (calcular preços, processar pedidos, etc.) são
+               executadas aqui.</p>
+         </li>
+      </ul>
+      <p>Resumindo a diferença (complementando o que vimos sobre Cliente):</p>
+      <ul>
+         <li>
+            <p><strong>Servidor:</strong> É o computador potente que armazena, processa e entrega os conteúdos/serviços.
+            </p>
+         </li>
+         <li>
+            <p><strong><i>Server-Side</i>:</strong> É o código e o processamento que acontecem nesse computador (o
+               servidor), antes que o resultado seja enviado para o navegador do usuário.</p>
+         </li>
+      </ul>
+      <p>Então, quando você acessa um site:</p>
+      <ol>
+         <li>
+            <p>Seu navegador, que é o <mark>Cliente</mark> faz um pedido ao <mark>Servidor</mark>.</p>
+         </li>
+         <li>
+            <p>O <mark>Servidor</mark> executa a lógica do <mark>lado do Servidor</mark> (busca no banco de dados, gera
+               a página, etc.).</p>
+         </li>
+         <li>
+            <p>O resultado (geralmente HTML, CSS, JavaScript) é enviado de volta para o seu navegador.</p>
+         </li>
+         <li>
+            <p>Seu navegador, que está do <mark>lado Cliente</mark>, exibe a página e permite a interatividade.</p>
+         </li>
+      </ol>
+
+      <small><a href="#inicio">Voltar</a></small>
+
+      <h2 id="estrutura">
+         <font face="Arial">Como é uma estrutura básica de um HTML?</font>
+      </h2>
+      <p>A estrutura do HTML é composta pelo <code>&lt;!DOCTYPE html&gt;</code>, depois colocamos as tags <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, <code>&lt;body&gt;</code>.</p>
+      <p><font color="gray"><code>&lt;!DOCTYPE html&gt;</code></font></p>
+      <p><font color="red"><code>&lt;html&gt;</code></font></p>
+      <p><font color="orange"><code>&lt;head&gt;</code></font></p>
+      <p><font color="orange"><code>&lt;/head&gt;</code></font></p>
+      <p><font color="blue"><code>&lt;body&gt;</code></font></p>
+      <p><font color="blue"><code>&lt;/body&gt;</code></font></p>
+      <p><font color="red"><code>&lt;/html&gt;</code></font></p>
+
+      <small><a href="#inicio">Voltar</a></small>
+
+      <h2 id="atributo">
+         <font face="Arial">O que é um atributo?</font>
+      </h2>
+      <p>No HTML, um atributo é uma informação extra que você adiciona a uma tag (elemento) para modificar ou fornecer
+         mais detalhes sobre como essa tag deve se comportar ou ser exibida. Pense neles como "configurações" ou
+         "propriedades" para os elementos HTML.</p>
+      <p>A sintaxe básica é:</p>
+      <p>
+         <<span>
+            <font color="red">nome-da-tag</font>
+            </span>
+            <font color="blue">nome-do-atributo</font>=<font color="green">"valor-do-atributo"</font>
+            > Conteúdo < <span>
+               /
+               </span>
+               <span>
+                  nome-da-tag
+               </span>>
+      </p>
+      <small><a href="#inicio">Voltar</a></small>
+
+      <h2 id="tags">
+         <font face="Arial">Tags de texto/formatação</font>
+      </h2>
+      <p><strong>Título de Nível 1:</strong> <code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code></p>
+      <p><strong>Parágrafo:</strong> <code>&lt;p&gt;</code></p>
+      <p><strong>Quebra de Linha Simples:</strong> <code>&lt;br&gt;</code></p>
+      <p><strong>Texto com Forte Importância (Negrito Semântico):</strong> <code>&lt;strong&gt;</code></p>
+      <p><strong>Texto em Negrito (Visual):</strong> <code>&lt;b&gt;</code></p>
+      <p><strong>Texto Enfatizado (Itálico Semântico):</strong> <code>&lt;em&gt;</code></p>
+      <p><strong>Texto em Itálico (Visual):</strong> <code>&lt;i&gt;</code></p>
+      <p><strong>Texto Realçado/Marcado:</strong> <code>&lt;mark&gt;</code></p>
+      <p><strong>Texto Menor:</strong> <code>&lt;small&gt;</code></p>
+      <p><strong>Texto Deletado:</strong> <code>&lt;del&gt;</code></p>
+      <p><strong>Texto Inserido:</strong> <code>&lt;ins&gt;</code></p>
+      <p><strong>Subscrito:</strong> <code>&lt;sub&gt;</code></p>
+      <p><strong>Sobrescrito:</strong> <code>&lt;sup&gt;</code></p>
+      <p><strong>Citação em Bloco:</strong> <code>&lt;blockquote&gt;</code></p>
+      <p><strong>Citação Curta/Inline:</strong> <code>&lt;q&gt;</code></p>
+      <p><strong>Código de Computador:</strong> <code>&lt;code&gt;</code></p>
+      <p><strong>Texto Pré-formatado:</strong> <code>&lt;pre&gt;</code></p>
+      <p><strong>Abreviação/Acrônimo:</strong> <code>&lt;abbr&gt;</code></p>
+      <p><strong>Informações de Contato:</strong> <code>&lt;address&gt;</code></p>
+      <p><strong>Título de Obra (Citação):</strong> <code>&lt;cite&gt;</code></p>
+
+      <small><a href="#inicio">Voltar</a></small>
+
+      <h2 id="listas">
+         <font face="Arial">Entendendo a diferença entre listas ordenadas e não ordenadas</font>
+      </h2>
+      <p>Uma lista não ordenada é usada quando a ordem dos itens não importa. Pense nela como uma lista de compras ou
+         uma lista de características. Os itens são marcados com símbolos (geralmente bolinhas, discos, quadrados ou
+         círculos), mas não números.</p>
+      <p><strong>Tag principal:</strong> <code>&lt;ul&gt;</code> (de "unordered list").</p>
+      <p><strong>Tag para os itens:</strong> <code>&lt;li&gt;</code> (de "list item") para cada item dentro da lista.</p>
+      <h3>Exemplo de como irá aparecer:</h3>
+      <ul>
+         <li>
+            <p>Pão</p>
+         </li>
+         <li>
+            <p>Leite</p>
+         </li>
+         <li>
+            <p>Ovo</p>
+         </li>
+      </ul>
+      <p>Já uma lista ordenada é usada quando a ordem dos itens é importante e faz diferença. Pense em uma receita
+         (passo 1, passo 2), um ranking, ou um conjunto de instruções. Os itens são marcados por números (padrão),
+         letras ou algarismos romanos.</p>
+      <p><strong>Tag principal:</strong> <code>&lt;ol&gt;</code> (de "ordered list")</p>
+      <p><strong>Tag para os itens:</strong> <code>&lt;li&gt;</code> (de "list item") para cada item dentro da lista.</p>
+      <h3>Exemplo de como irá aparecer:</h3>
+      <ol>
+         <li>
+            <p>Misture os ingredientes secos.</p>
+         </li>
+         <li>
+            <p>Adicione os líquidos aos poucos.</p>
+         </li>
+         <li>
+            <p>Despeje a massa em uma forma untada.</p>
+         </li>
+         <li>
+            <p>Leve ao forno pré-aquecido por 30 minutos.</p>
+         </li>
+      </ol>
+      <h3>Resumindo a Diferença Chave:</h3>
+      <p><code>&lt;ul&gt;</code> (Não Ordenada): A ordem dos itens não tem importância. Marcadores são símbolos.
+         <br>
+         <code>&lt;ol&gt;</code> (Ordenada): A ordem dos itens tem importância. Marcadores são números, letras ou
+         algarismos romanos.
+      </p>
+      <small><a href="#inicio">Voltar</a></small>
+
+      <h2 id="target">
+         <font face="Arial">Atributo Target</font>
+      </h2>
+      <p>Basicamente, o target define o "alvo" para a navegação. Ele é super útil quando você quer que um link abra em
+         um local diferente da janela ou aba atual do navegador.</p>
+      <p><strong>_self (Padrão):</strong> Abre o link na mesma janela ou aba em que o link foi clicado.</p>
+      <p><strong>_blank:</strong>Abre o link em uma nova janela ou aba do navegador.</p>
+      <small><a href="#inicio">Voltar</a></small>
+
+      <h2 id="formulario">
+         <font face="Arial">Formulários</font>
+      </h2>
+      <p>Um formulário é composto por campos. A tag <code>&lt;form&gt;</code> seria o formulário que é composto pelos
+         campos que no HTML são representados pela tag <code>&lt;input&gt;;</code></p>
+      <h3>Exemplo de formulário:</h3>
+      <form action="#" method="post">
+         <label for="nome">Nome</label>
+         <input type="text" name="nome">
+         <br>
+         <label for="idade">Idade</label>
+         <input type="number" name="idade">
+         <br>
+         <label for="senha">Senha</label>
+         <input type="password" name="senha" id="senha">
+         <button type="submit">Enviar</button>
+      </form>
+      <small><a href="#inicio">Voltar</a></small>
+
+      <h2 id="select">
+         <font face="Arial">Tag Select</font>
+      </h2>
+      <p>Serve para dar opções ao usuário. Usamos as tags <code>&lt;form&gt;</code>, pois normalmente está associado ao
+         um formulário, <code>&lt;select&gt;</code>, <code>&lt;option&gt;</code>.</p>
+      <h3>Exemplo:</h3>
+      <form action="#" method="post">
+         <select name="select" id="select">
+            <option value="">Selecione</option>
+            <option value="">Pizza de mussarela</option>
+            <option value="">Pizza de calabresa</option>
+            <option value="">Pizza de frango</option>
+         </select>
+      </form>
+
+      <small><a href="#inicio">Voltar</a></small>
+
+      <h2 id="referencias">
+         <font face="Arial">Links de referências</font>
+      </h2>
+
+      <a href="https://www.ebiografia.com/steve_jobs/" target="_blank">Biografia Steve Jobs</a>
+      <br>
+      <a href="https://www.ebiografia.com/bill_gates/" target="_blank">Biografia Bill Gates</a>
+      <br>
+      <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Reference/Elements" target="_blank">Mozilla -
+         ElementosHTML</a>
+      <br>
+      <a href="https://www.w3schools.com/html/default.asp" target="_blank">W3schools</a>
+      <br>
+      <a href="https://www.geeksforgeeks.org/html/difference-between-server-side-scripting-and-client-side-scripting/"
+         target="_blank">Client-Side x Server-Side</a>
+      <br>
+      <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Reference/Elements/a" target="_blank">Mozilla - Tag
+         Target</a>
+      <br>
+      <a href="https://www.w3schools.com/tags/att_a_target.asp" target="_blank">W3schools - Tag Target</a>
+      <small><a href="#inicio">Voltar</a></small>
+   </font>
+</body>
+
+</html>
